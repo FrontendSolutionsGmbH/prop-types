@@ -117,4 +117,9 @@ export default {
 };
 ```
     
-documentation follows, prior react prop-types 16.2 documentation is still [here](README-ORIGINAL.md) 
+documentation follows
+
+## Reference to *original* prop-types
+
+this module is a fork of:
+https://github.com/facebook/prop-types
