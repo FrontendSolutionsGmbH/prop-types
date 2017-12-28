@@ -1,17 +1,20 @@
 # ufp-types
 
-The only purpose of this project is to keep prop type checking functionality in production
+runtime type checking
 
-it is NOT meant for react-prop-types replacement.
+this module is a fork of:
+https://github.com/facebook/prop-types
 
-The runtime type checking is an essential functionality required by UFP projects so 
+## Remark / History
 
-Runtime type checking for React props and similar objects.
+The excellent react-prop-types provide runtime type checking functionality that is useful 
+for production as well. 
 
-You can use prop-types to document the intended types of properties passed to
-components. React (and potentially other libraries—see the checkPropTypes()
-reference below) will check props passed to your components against those
-definitions, and warn in development if they don’t match.
+so:
+__This module is NOT meant for react-prop-types replacement__
+
+Runtime type checking is used in [https://www.npmjs.com/package/ufp-core](ufp-core) for configuration checks or 
+dynamic user interface building depending on the provided data and much more.
 
 ## Installation
 
