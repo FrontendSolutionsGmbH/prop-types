@@ -1,10 +1,4 @@
-# ufp-types
-
-The only purpose of this project is to keep prop type checking functionality in production
-
-it is NOT meant for react-prop-types replacement.
-
-The runtime type checking is an essential functionality required by UFP projects so 
+# prop-types
 
 Runtime type checking for React props and similar objects.
 
@@ -16,16 +10,41 @@ definitions, and warn in development if they don’t match.
 ## Installation
 
 ```shell
-npm install --save ufp-types
+npm install --save prop-types
 ```
 
 ## Importing
 
 ```js
-import UfpTypes from 'ufp-types'; // ES6
-var UfpTypes = require('ufp-types'); // ES5 with npm
+import PropTypes from 'prop-types'; // ES6
+var PropTypes = require('prop-types'); // ES5 with npm
 ```
 
+### CDN
+
+If you prefer to exclude `prop-types` from your application and use it 
+globally via `window.PropTypes`, the `prop-types` package provides 
+single-file distributions, which are hosted on the following CDNs:
+
+* [**unpkg**](https://unpkg.com/prop-types/)
+```html
+<!-- development version -->
+<script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
+
+<!-- production version -->
+<script src="https://unpkg.com/prop-types@15.6/prop-types.min.js"></script>
+```
+
+* [**cdnjs**](https://cdnjs.com/libraries/prop-types)
+```html
+<!-- development version -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
+
+<!-- production version -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.min.js"></script>
+```
+
+To load a specific version of `prop-types` replace `15.6.0` with the version number. 
 
 ## Usage
 

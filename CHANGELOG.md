@@ -1,3 +1,13 @@
+
+
+## 1.0.0
+
+* remove of all production restrictions for this project
+
+## Before 1.0
+
+Clone of react prop-types
+
 ## 15.6.0
 
 * Switch from BSD + Patents to MIT license
