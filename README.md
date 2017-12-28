@@ -7,14 +7,14 @@ https://github.com/facebook/prop-types
 
 ## Remark / History
 
-The excellent react-prop-types provide runtime type checking functionality that is useful 
+The excellent react-prop-types provide runtime type checking functionality, that is useful 
 for production as well. 
 
 so:
 __This module is NOT meant for react-prop-types replacement__
 
 Runtime type checking is used in [https://www.npmjs.com/package/ufp-core](ufp-core) for configuration checks or 
-dynamic user interface building depending on the provided data and much more.
+dynamic user interface building, depending on the provided data and much more.
 
 ## Installation
 
