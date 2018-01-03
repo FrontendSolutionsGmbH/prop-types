@@ -14,6 +14,7 @@ var assign = require('object-assign');
 
 var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
 var checkPropTypes = require('./checkPropTypes');
+var checkUfpTypes = require('./checkUfpTypes');
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
     /* global Symbol */
@@ -161,7 +162,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
                     invariant(
                         false,
                         'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-                        'Use `PropTypes.checkPropTypes()` to call them. ' +
+                        'Use `PropTypes.checkUfpTypes()` to call them. ' +
                         'Read more at http://fb.me/use-check-prop-types'
                     );
                 } else if (typeof console !== 'undefined') {
@@ -546,6 +547,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
     }
 
     ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.checkUfpTypes = checkUfpTypes;
     ReactPropTypes.PropTypes = ReactPropTypes;
 
     return ReactPropTypes;

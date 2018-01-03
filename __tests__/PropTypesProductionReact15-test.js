@@ -37,7 +37,7 @@ function expectNoop(declaration, value) {
   for (var i = 0; i < 3; i++) {
     declaration(props, propName, componentName, 'prop');
   }
-  // Try calling it via checkPropTypes
+  // Try calling it via checkUfpTypes
   const propTypes = {
     testProp: declaration,
   };
