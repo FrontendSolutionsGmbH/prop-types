@@ -16,6 +16,8 @@ var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
 var checkPropTypes = require('./checkPropTypes');
 var checkUfpTypes = require('./checkUfpTypes');
 
+var ufpRegexTypeChecker = require('./RegEx')
+
 module.exports = function (isValidElement, throwOnDirectAccess) {
     /* global Symbol */
     var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
@@ -112,6 +114,10 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
         oneOfType: createUnionTypeChecker,
         shape: createShapeTypeChecker,
         exact: createStrictShapeTypeChecker,
+
+        // ufp
+        regExp: ufpRegexTypeChecker
+
     };
 
     /**
