@@ -549,6 +549,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
     }
 
     ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.checkUfpTypes = require('./checkUfpTypes');
     ReactPropTypes.PropTypes = ReactPropTypes;
 
     return ReactPropTypes;
