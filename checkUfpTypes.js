@@ -49,6 +49,13 @@ function checkUfpTypes(typeSpecs, values, location, componentName) {
             }
         }
     }
+    //
+    // if (result.length > 0) {
+    //
+    //     // console.log('RESULT IS ', result)
+    //
+    // }
+
     return result
 }
 

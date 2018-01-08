@@ -7,8 +7,8 @@ function isString(myVar) {
 }
 function UfpPropTypeRegex(regExp) {
     // console.log('PropTypes contains creating ', values)
-    if (regExp instanceof RegExp) {
-        throw new Error('containsAnd Requires single property list, not array')
+    if (!(regExp instanceof RegExp)) {
+        throw new Error('regExRequires instance of RegExp as only parameter')
     }
 
     function validate(props, propName, componentName) {
