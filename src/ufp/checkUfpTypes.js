@@ -3,13 +3,14 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
+ *
+ * 207 c.k Striped the warning only output and returns array
  */
 
 'use strict';
 
 var invariant = require('fbjs/lib/invariant');
-var warning = require('fbjs/lib/warning');
-var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+var ReactPropTypesSecret = require('./../../lib/ReactPropTypesSecret');
 
 /**
  * Assert that the values match with the type specs.
@@ -42,8 +43,7 @@ function checkUfpTypes(typeSpecs, values, location, componentName) {
             // warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error);
 
             if (error instanceof Error) {
-                // Only monitor this failure once because there tends to be a lot of the
-                // same error.
+                // put into result
                 result.push(error.message)
                 // warning(false, 'Failed %s type: %s%s', location, error.message, '');
             }
