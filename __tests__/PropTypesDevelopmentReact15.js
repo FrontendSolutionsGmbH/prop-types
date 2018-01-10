@@ -110,7 +110,7 @@ describe('PropTypesDevelopmentReact15', () => {
     resetWarningCache();
   });
 
-  describe('checkPropTypes', () => {
+  describe('checkUfpTypes', () => {
     it('should warn for invalid validators', () => {
       spyOn(console, 'error')
       const propTypes = { foo: undefined };

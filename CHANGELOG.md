@@ -1,4 +1,9 @@
 
+## 1.1.0
+
+* regEx UfpType for validating values of properties against a regular expression
+* utility method added 'checkUfpTypes()' that returns array of matching errors or empty array if matches
+
 ## 1.0.1
 
 * remove of all production restrictions for this project

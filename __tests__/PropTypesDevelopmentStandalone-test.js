@@ -96,7 +96,7 @@ function expectThrowsInDevelopment(declaration, value) {
     declaration(props, 'testProp', 'testComponent', 'prop');
   }).toThrowError(
     'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-    'Use `PropTypes.checkPropTypes()` to call them. ' +
+    'Use `PropTypes.checkUfpTypes()` to call them. ' +
     'Read more at http://fb.me/use-check-prop-types'
   );
 }
@@ -106,7 +106,7 @@ describe('PropTypesDevelopmentStandalone', () => {
     resetWarningCache();
   });
 
-  describe('checkPropTypes', () => {
+  describe('checkUfpTypes', () => {
     it('should warn for invalid validators', () => {
       spyOn(console, 'error')
       const propTypes = { foo: undefined };
