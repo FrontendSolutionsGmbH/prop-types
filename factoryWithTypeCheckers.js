@@ -113,7 +113,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
         exact: createStrictShapeTypeChecker,
 
         // ufp extensions
-        regEx: require('./src/ufp/RegEx'),
+        regEx: require('./lib/ufp/RegEx'),
     };
 
     /**
@@ -549,7 +549,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
     }
 
     ReactPropTypes.checkPropTypes = checkPropTypes;
-    ReactPropTypes.checkUfpTypes = require('./src/ufp/checkUfpTypes');
+    ReactPropTypes.checkUfpTypes = require('./lib/ufp/checkUfpTypes');
     ReactPropTypes.PropTypes = ReactPropTypes;
 
     return ReactPropTypes;
